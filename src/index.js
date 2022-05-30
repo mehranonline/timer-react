@@ -1,18 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./App1";
 
-const tick = () => {
-  const elem = (
-    <div>
-      <h2>This is now!</h2>
-      <h2>{new Date().toLocaleString()}</h2>
-    </div>
-  );
-  ReactDOM.render(elem, document.getElementById("myDiv"));
-};
-
-setInterval(() => {
-    tick()
-},1000)
-
-
+ReactDOM.render(<App />, document.getElementById("root"));
